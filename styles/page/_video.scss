@@ -64,3 +64,39 @@
 .main-video-s {
   max-width: 12rem;
 }
+
+@media screen and (max-width: 1279px) {
+  .main-video-list {
+    max-height: 40rem;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .video-wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-row-gap: 2rem;
+  }
+
+  .main-video-list {
+    max-height: 30rem;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .title-category {
+    padding-top: 2rem;
+    span {
+      display: none;
+    }
+  }
+
+  .main-video-list {
+    max-height: 20rem;
+  }
+
+  .main-video-title {
+    font-size: 2rem;
+  }
+}

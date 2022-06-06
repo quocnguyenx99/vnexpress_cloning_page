@@ -15,14 +15,15 @@
 @import "./layout/header";
 @import "./layout/navigation";
 @import "./layout/footer";
+@import "./layout/menu";
 
 // components
 @import "./components/scrollup";
 // pages
 @import "./page/topstory";
-@import "./page/streamhome";
 @import "./page/video";
 @import "./page/business";
+@import "./page/streamhome";
 
 // theme
 // main
