@@ -1,3 +1,4 @@
+// HIỂN THỊ THỨ NGÀY THÁNG NĂM
 const calender = document.querySelector('.header__calander')
 var date = new Date();
 // get DD/MM/YY
@@ -30,6 +31,8 @@ case 6:
  
 calender.innerHTML = day_name + DMY;
 
+
+// SỬ  DỤNG LIBRARY SLICK JQUERY ĐỂ TẠO CAROUSEL TRƯỢT KIỂU FADE
 $('.topstory-advertise').slick({
     arrows: false,
     slidesToShow: 1,
@@ -39,7 +42,7 @@ $('.topstory-advertise').slick({
     fade:true,
     cssEase: 'linear'
   });
-
+// SỬ  DỤNG LIBRARY SLICK JQUERY ĐỂ TẠO CAROUSEL VỚI PREV/NEXT BUTTON CUSTOM
   $('.business__card-list').slick({
     slidesToShow: 4,
     slidesToScroll: 1,
@@ -60,7 +63,7 @@ $('.topstory-advertise').slick({
     
   });
 
-
+// THAY ĐỔI SRC TỚI VIDEO HIỆN ĐƯỢC CLICK VÀ UPDATE TITLES VIDEO
 let videoList = document.querySelectorAll('.list') 
 
 videoList.forEach(vid => {
@@ -74,6 +77,7 @@ videoList.forEach(vid => {
     }
 })
 
+
 // SHOW SCROLL UP BUTTON
 function scrollUp() {
     const scrollUp = document.getElementById('scroll-up')
@@ -84,6 +88,7 @@ function scrollUp() {
 window.addEventListener('scroll', scrollUp)
 
 
+// ĐÓNG MỞ MENU TOGGLE
 const menuToggle = document.querySelector('.nav__show-all')
 const menu = document.querySelector('.nav-wrap-menu')
 const closeBtn = document.querySelector('.close-menu')
