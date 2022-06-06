@@ -671,6 +671,24 @@ html {
   color: #222;
 }
 
+@media screen and (max-width: 767px) {
+  .content-wrapper {
+    justify-content: space-between;
+  }
+
+  .content-right {
+    display: none;
+  }
+
+  .content-left {
+    width: 100%;
+  }
+
+  .content-left-wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
 .scroll-up {
   position: fixed;
   background-color: #fff;
